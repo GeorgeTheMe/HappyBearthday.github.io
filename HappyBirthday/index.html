@@ -26,15 +26,15 @@
     <title>Happy Birthday!</title>
     <link rel="stylesheet" href="style.css">
     <!-- Tekstikenttä -->
-<!-- <input type="text" value="Hei maailma" id="myInput"> -->
+<input type="text" value="Hei maailma" id="myInput">
 
-<!-- <!- Nappi, joka kopioi tekstin 
-<button onclick="NameFunction()">Kopioi teksti</button> -->
+  <!-- Nappi, joka kopioi tekstin  -->
+ <button onclick="NameFunction()">Kopioi teksti</button>  
 
-<!--<script>
+<script>
 function NameFunction() {
   // Hae tekstikenttä
-  var copyText = document.getElementById("myInput");
+  var copyText = NameInput;
   
   // Valitse tekstikenttä
   copyText.select();
@@ -42,18 +42,15 @@ function NameFunction() {
   
   // Kopioi teksti leikepöydälle
   navigator.clipboard.writeText(copyText.value);
-  
-  // Ilmoita kopioitu teksti
-  alert("Kopioitu teksti: " + copyText.value);
 }
-</script> -->
+</script> 
 <script>
     let NameInput = prompt ("Please enter your name", "Harry Potter")
-    function NameShow() {
-        // document.getElementById("output").innerHTML = NameInput;
-        // document.querySelector('.content .value').innerHTML = 'World!';
-        // $(".content .value").html("World!");
-    }
+    // function NameShow() {
+    //      document.getElementById("output").innerHTML = NameInput;
+    //      document.querySelector('.content .value').innerHTML = 'World!';
+    //      $(".content .value").html("World!");
+    // }
     
 
 </script>
@@ -62,7 +59,7 @@ function NameFunction() {
 <body><center>
     <div class="container">
         <div class="header">
-            <button onclick="NameShow()">Make the website personal!</button>
+            <button onclick="name">Make the website personal!</button>
              <h1 class="content">Happy Birthday, <span></span>!</h1>
         </div>
         <div class="content">
